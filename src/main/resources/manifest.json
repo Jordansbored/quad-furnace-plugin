@@ -1,11 +1,11 @@
 {
-    "Group": "Jordan",
+    "Group": "Jordansbored",
     "Name": "DoubleFurnace",
-    "Version": "1.0.2",
+    "Version": "1.0.3",
     "Description": "Adds Double Furnace (2x speed) and Quad Furnace (4x speed) processing benches with extra slots.",
     "Authors": [
         {
-            "Name": "Jordan",
+            "Name": "Jordansbored",
             "Url": "https://www.curseforge.com/members/jordansbored/projects"
         }
     ],
