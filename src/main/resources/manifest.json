@@ -2,7 +2,7 @@
     "Group": "Jordan",
     "Name": "DoubleFurnace",
     "Version": "1.0.1",
-    "Description": "Adds Double Furnace (4 input, 2 fuel, 8 output) and Quad Furnace (6 input, 3 fuel, 12 output) processing benches.",
+    "Description": "Adds Double Furnace (2x speed) and Quad Furnace (4x speed) processing benches with extra slots.",
     "Authors": [
         {
             "Name": "Jordan",
