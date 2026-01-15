@@ -20,8 +20,11 @@ public class QuadFurnaceCommand extends CommandBase {
     @Override
     protected void executeSync(@Nonnull CommandContext ctx) {
         ctx.sendMessage(Message.raw("=== Double/Quad Furnace Plugin ==="));
-        ctx.sendMessage(Message.raw("Double Furnace: 4 input, 2 fuel, 8 output slots"));
-        ctx.sendMessage(Message.raw("Quad Furnace: 6 input, 3 fuel, 12 output slots"));
+        ctx.sendMessage(Message.raw("Double Furnace: 2x speed, 4 input, 2 fuel, 8 output slots"));
+        ctx.sendMessage(Message.raw("Quad Furnace: 4x speed, 8 input, 3 fuel, 8 output slots"));
         ctx.sendMessage(Message.raw("Craft: 2x Furnace -> Double, 2x Double -> Quad"));
+        ctx.sendMessage(Message.raw(""));
+        ctx.sendMessage(Message.raw("Note: Quad Furnace was designed for 12 output slots, but the"));
+        ctx.sendMessage(Message.raw("vanilla UI has a slot limit. We've maxed it out at 8 slots."));
     }
 }
