@@ -1,0 +1,23 @@
+{
+    "Group": "Jordan",
+    "Name": "DoubleFurnace",
+    "Version": "1.0.1",
+    "Description": "Adds Double Furnace (4 input, 2 fuel, 8 output) and Quad Furnace (6 input, 3 fuel, 12 output) processing benches.",
+    "Authors": [
+        {
+            "Name": "Jordan",
+            "Url": "https://www.curseforge.com/members/jordansbored/projects"
+        }
+    ],
+    "Website": "https://www.curseforge.com/members/jordansbored/projects",
+    "ServerVersion": "*",
+    "Dependencies": {
+        
+    },
+    "OptionalDependencies": {
+        
+    },
+    "DisabledByDefault": false,
+    "Main": "com.example.quadfurnace.QuadFurnacePlugin",
+    "IncludesAssetPack": true
+}

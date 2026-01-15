@@ -1,0 +1,152 @@
+$C = "../Common.ui";
+
+// Double Furnace Processing Panel
+// 4 input slots (2x2), 2 fuel slots, 8 output slots (2x4)
+
+@SlotSize = 64;
+@SlotSpacing = 4;
+@PanelPadding = 12;
+
+$C.@PageOverlay {}
+
+$C.@DecoratedContainer {
+  Anchor: (Width: 680, Height: 420);
+
+  #Title {
+    Label #PanelTitle {
+      Style: (
+        ...$C.@TitleStyle,
+        HorizontalAlignment: Center,
+      );
+      Text: "Double Furnace";
+    }
+  }
+
+  #Content {
+    LayoutMode: Left;
+    Padding: (Full: @PanelPadding);
+
+    // Fuel Section
+    Group #FuelSection {
+      Anchor: (Width: 160);
+      Background: (TexturePath: "Common/ContainerPanelPatch.png", Border: 4);
+      Padding: (Full: 8);
+
+      Label #FuelLabel {
+        Style: (
+          FontSize: 14,
+          TextColor: #96a9be,
+          HorizontalAlignment: Center,
+          RenderBold: true,
+          RenderUppercase: true
+        );
+        Text: "FUEL";
+        Anchor: (Height: 24);
+      }
+
+      Group #FuelSlots {
+        LayoutMode: MiddleCenter;
+        Anchor: (Top: 30);
+
+        ItemGrid #FuelItemGrid {
+          SlotsPerRow: 2;
+          Style: (
+            SlotSize: @SlotSize,
+            SlotSpacing: @SlotSpacing,
+            SlotIconSize: 58,
+            SlotBackground: "Pages/Inventory/ProcessingFuelSlot.png"
+          );
+        }
+      }
+
+      // On/Off Button
+      TextButton #OnOffButton {
+        Anchor: (Height: 32, Width: 120, Top: 160);
+        Text: "START";
+      }
+    }
+
+    // Input Section
+    Group #InputSection {
+      Anchor: (Width: 200, Left: 12);
+      Background: (TexturePath: "Common/ContainerPanelPatch.png", Border: 4);
+      Padding: (Full: 8);
+
+      Label #InputLabel {
+        Style: (
+          FontSize: 14,
+          TextColor: #96a9be,
+          HorizontalAlignment: Center,
+          RenderBold: true,
+          RenderUppercase: true
+        );
+        Text: "INPUT";
+        Anchor: (Height: 24);
+      }
+
+      Group #InputSlots {
+        LayoutMode: MiddleCenter;
+        Anchor: (Top: 30);
+
+        ItemGrid #InputItemGrid {
+          SlotsPerRow: 2;
+          Style: (
+            SlotSize: @SlotSize,
+            SlotSpacing: @SlotSpacing,
+            SlotIconSize: 58,
+            SlotBackground: "Pages/Inventory/Slot.png"
+          );
+        }
+      }
+
+      // Progress Bar
+      Group #ProgressBarContainer {
+        Anchor: (Height: 20, Width: 140, Top: 180);
+        Background: "Pages/Inventory/ProcessingBar.png";
+
+        ProgressBar #ProcessingBar {
+          Anchor: (Height: 15);
+          BarTexturePath: "Pages/Inventory/ProcessingBarFill.png";
+          Value: 0;
+          Direction: End;
+        }
+      }
+    }
+
+    // Output Section
+    Group #OutputSection {
+      Anchor: (Width: 200, Left: 12);
+      Background: (TexturePath: "Common/ContainerPanelPatch.png", Border: 4);
+      Padding: (Full: 8);
+
+      Label #OutputLabel {
+        Style: (
+          FontSize: 14,
+          TextColor: #96a9be,
+          HorizontalAlignment: Center,
+          RenderBold: true,
+          RenderUppercase: true
+        );
+        Text: "OUTPUT";
+        Anchor: (Height: 24);
+      }
+
+      Group #OutputSlots {
+        LayoutMode: MiddleCenter;
+        Anchor: (Top: 30);
+
+        ItemGrid #OutputItemGrid {
+          SlotsPerRow: 2;
+          Style: (
+            SlotSize: @SlotSize,
+            SlotSpacing: @SlotSpacing,
+            SlotIconSize: 58,
+            SlotBackground: "Pages/Inventory/Slot.png"
+          );
+        }
+      }
+    }
+  }
+}
+
+$C.@BackButton {}
