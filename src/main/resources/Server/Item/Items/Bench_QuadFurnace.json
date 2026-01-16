@@ -87,7 +87,7 @@
         ]
       },
       "OutputSlotsCount": 8,
-      "Id": "QuadFurnace",
+      "Id": "Furnace",
       "TierLevels": [
         {
           "UpgradeRequirement": {
