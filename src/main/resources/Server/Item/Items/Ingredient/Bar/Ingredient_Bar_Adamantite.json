@@ -17,6 +17,10 @@
     "BenchRequirement": [
       {
         "Type": "Processing",
+        "Id": "Furnace"
+      },
+      {
+        "Type": "Processing",
         "Id": "DoubleFurnace"
       }
     ],
