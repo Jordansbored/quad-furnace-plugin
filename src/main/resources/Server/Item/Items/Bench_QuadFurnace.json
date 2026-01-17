@@ -11,7 +11,12 @@
     "Input": [
       {
         "ItemId": "Bench_DoubleFurnace",
-        "Quantity": 2
+        "Quantity": 2,
+        "Metadata": {
+          "BlockState": {
+            "Type": "processingBench"
+          }
+        }
       }
     ],
     "Output": [
@@ -19,10 +24,7 @@
         "ItemId": "Bench_QuadFurnace",
         "Metadata": {
           "BlockState": {
-            "Type": "processingBench",
-            "FuelContainer": {
-              "Capacity": 6
-            }
+            "Type": "processingBench"
           }
         }
       }

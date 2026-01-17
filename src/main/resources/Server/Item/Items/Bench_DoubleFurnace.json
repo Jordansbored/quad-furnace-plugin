@@ -11,7 +11,15 @@
     "Input": [
       {
         "ItemId": "Bench_Furnace",
-        "Quantity": 2
+        "Quantity": 2,
+        "Metadata": {
+          "BlockState": {
+            "Type": "processingBench",
+            "FuelContainer": {
+              "Capacity": 2
+            }
+          }
+        }
       }
     ],
     "Output": [
@@ -19,10 +27,7 @@
         "ItemId": "Bench_DoubleFurnace",
         "Metadata": {
           "BlockState": {
-            "Type": "processingBench",
-            "FuelContainer": {
-              "Capacity": 4
-            }
+            "Type": "processingBench"
           }
         }
       }
@@ -215,7 +220,8 @@
   },
   "Tags": {
     "Type": [
-      "Bench"
+      "Bench",
+      "DoubleFurnace"
     ]
   },
   "MaxStack": 1,
