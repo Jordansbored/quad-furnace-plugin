@@ -36,10 +36,14 @@ public class QuadFurnacePlugin extends JavaPlugin {
         // Register the command for testing/info
         this.getCommandRegistry().registerCommand(new QuadFurnaceCommand());
         
+        // Register fix command for old furnaces with metadata
+        this.getCommandRegistry().registerCommand(new FixFurnacesCommand());
+        
         // The item/block definitions are loaded automatically from the resources folder
         // They use Hytale's built-in ProcessingBench system, so no custom Java code needed
         
         LOGGER.atInfo().log("Double/Quad Furnace plugin setup complete!");
         LOGGER.atInfo().log("Craft: 2x Furnace -> Double Furnace, 2x Double Furnace -> Quad Furnace");
+        LOGGER.atInfo().log("Use /fixfurnaces to fix old furnaces that won't work in recipes");
     }
 }
